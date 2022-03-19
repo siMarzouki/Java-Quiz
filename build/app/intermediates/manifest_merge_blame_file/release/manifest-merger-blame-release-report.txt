@@ -1,0 +1,648 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="javaquiz.moazmar.com"
+4    android:versionCode="4"
+5    android:versionName="2.1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:5:5-79
+12-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:5-80
+13-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:5-81
+14-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Android package visibility setting -->
+15-->[:firebase_analytics] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:9:5-68
+15-->[:firebase_analytics] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:9:22-65
+16    <queries>
+16-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:27:5-43:15
+17
+18        <!-- For browser content -->
+19        <intent>
+19-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:30:9-36:18
+20            <action android:name="android.intent.action.VIEW" />
+20-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+20-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+21
+22            <category android:name="android.intent.category.BROWSABLE" />
+22-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+22-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+23
+24            <data android:scheme="https" />
+24-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+24-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+25        </intent>
+26        <!-- End of browser content -->
+27        <!-- For CustomTabsService -->
+28        <intent>
+28-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:39:9-41:18
+29            <action android:name="android.support.customtabs.action.CustomTabsService" />
+29-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:40:13-90
+29-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:40:21-87
+30        </intent>
+31        <!-- End of CustomTabsService -->
+32    </queries>
+33
+34    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+34-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:5-110
+34-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:26:22-107
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:27:5-81
+35-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:27:22-78
+36
+37    <application
+37-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:7:5-48:19
+38        android:allowBackup="true"
+38-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:8:9-35
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.6.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\f6db85e083e679e6b53163595f1fb9d8\core-1.6.0\AndroidManifest.xml:24:18-86
+40        android:fullBackupContent="true"
+40-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:9:9-41
+41        android:icon="@mipmap/ic_launcher"
+41-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:10:9-43
+42        android:label="Java Quiz" >
+42-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:11:9-34
+43        <activity
+43-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:12:9-38:20
+44            android:name="com.mighty.quizapp_flutter.MainActivity"
+44-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:13:13-41
+45            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+45-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:14:13-163
+46            android:hardwareAccelerated="true"
+46-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:15:13-47
+47            android:launchMode="singleTop"
+47-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:16:13-43
+48            android:theme="@style/LaunchTheme"
+48-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:17:13-47
+49            android:windowSoftInputMode="adjustResize" >
+49-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:18:13-55
+50
+51            <!--
+52                 Specifies an Android theme to apply to this Activity as soon as
+53                 the Android process has started. This theme is visible to the user
+54                 while the Flutter UI initializes. After that, this theme continues
+55                 to determine the Window background behind the Flutter UI.
+56            -->
+57            <meta-data
+57-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:23:13-25:57
+58                android:name="io.flutter.embedding.android.NormalTheme"
+58-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:24:17-72
+59                android:resource="@style/NormalTheme" />
+59-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:25:17-54
+60            <!--
+61                 Displays an Android View that continues showing the launch screen
+62                 Drawable until Flutter paints its first frame, then this splash
+63                 screen fades out. A splash screen is useful to avoid any visual
+64                 gap between the end of Android's launch screen and the painting of
+65                 Flutter's first frame.
+66            -->
+67            <meta-data
+67-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:31:13-33:66
+68                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+68-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:32:17-81
+69                android:resource="@drawable/launch_background" />
+69-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:33:17-63
+70
+71            <intent-filter>
+71-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:34:13-37:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:35:17-69
+72-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:35:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:36:17-77
+74-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:36:27-74
+75            </intent-filter>
+76        </activity>
+77        <!--
+78             Don't delete the meta-data below.
+79             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+80        -->
+81        <meta-data
+81-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:41:9-43:33
+82            android:name="flutterEmbedding"
+82-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:42:13-44
+83            android:value="2" />
+83-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:43:13-30
+84        <meta-data
+84-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:45:9-47:70
+85            android:name="com.google.android.gms.ads.APPLICATION_ID"
+85-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:46:13-69
+86            android:value="ca-app-pub-1399327544318575~2365073538" />
+86-->C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\android\app\src\main\AndroidManifest.xml:47:13-67
+87
+88        <service
+88-->[:firebase_storage] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+89            android:name="com.google.firebase.components.ComponentDiscoveryService"
+89-->[:firebase_storage] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:8:18-89
+90            android:directBootAware="true"
+90-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+91            android:exported="false" >
+91-->[com.google.firebase:firebase-analytics-ktx:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6f28e86613aeaab6fb573843b672ca1e\jetified-firebase-analytics-ktx-19.0.0\AndroidManifest.xml:10:13-37
+92            <meta-data
+92-->[:firebase_storage] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+93                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+93-->[:firebase_storage] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:10:17-126
+94                android:value="com.google.firebase.components.ComponentRegistrar" />
+94-->[:firebase_storage] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_storage\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+95            <meta-data
+95-->[:firebase_analytics] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:85
+96                android:name="com.google.firebase.components:io.flutter.plugins.firebaseanalytics.FlutterFirebaseAppRegistrar"
+96-->[:firebase_analytics] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:14:17-127
+97                android:value="com.google.firebase.components.ComponentRegistrar" />
+97-->[:firebase_analytics] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_analytics\intermediates\library_manifest\release\AndroidManifest.xml:15:17-82
+98            <meta-data
+98-->[:cloud_firestore] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+99                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+99-->[:cloud_firestore] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:10:17-134
+100                android:value="com.google.firebase.components.ComponentRegistrar" />
+100-->[:cloud_firestore] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\cloud_firestore\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+101            <meta-data
+101-->[:firebase_auth] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+102                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+102-->[:firebase_auth] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+103                android:value="com.google.firebase.components.ComponentRegistrar" />
+103-->[:firebase_auth] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_auth\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+104            <meta-data
+104-->[:firebase_core] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+105-->[:firebase_core] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_core] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+107            <meta-data
+107-->[com.google.firebase:firebase-analytics-ktx:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6f28e86613aeaab6fb573843b672ca1e\jetified-firebase-analytics-ktx-19.0.0\AndroidManifest.xml:11:13-13:85
+108                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+108-->[com.google.firebase:firebase-analytics-ktx:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6f28e86613aeaab6fb573843b672ca1e\jetified-firebase-analytics-ktx-19.0.0\AndroidManifest.xml:12:17-126
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[com.google.firebase:firebase-analytics-ktx:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6f28e86613aeaab6fb573843b672ca1e\jetified-firebase-analytics-ktx-19.0.0\AndroidManifest.xml:13:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\59f01f42ae488f58a958bf6bf0fdd182\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:15:13-17:85
+111                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+111-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\59f01f42ae488f58a958bf6bf0fdd182\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:16:17-113
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-common-ktx:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\59f01f42ae488f58a958bf6bf0fdd182\jetified-firebase-common-ktx-20.0.0\AndroidManifest.xml:17:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:77:13-79:85
+114                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+114-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:78:17-109
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:79:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-firestore:23.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\11c90eaaea5485fa454da9785970bedd\jetified-firebase-firestore-23.0.0\AndroidManifest.xml:20:13-22:85
+117                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+117-->[com.google.firebase:firebase-firestore:23.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\11c90eaaea5485fa454da9785970bedd\jetified-firebase-firestore-23.0.0\AndroidManifest.xml:21:17-111
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-firestore:23.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\11c90eaaea5485fa454da9785970bedd\jetified-firebase-firestore-23.0.0\AndroidManifest.xml:22:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5df0b62e2e1b1f2144ab71adc99f0a09\jetified-firebase-storage-20.0.0\AndroidManifest.xml:33:13-35:85
+120                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+120-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5df0b62e2e1b1f2144ab71adc99f0a09\jetified-firebase-storage-20.0.0\AndroidManifest.xml:34:17-107
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-storage:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5df0b62e2e1b1f2144ab71adc99f0a09\jetified-firebase-storage-20.0.0\AndroidManifest.xml:35:17-82
+122            <meta-data
+122-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\dd7c9673f49f0c768dc82f26b4dfa49c\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:30:13-32:85
+123                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+123-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\dd7c9673f49f0c768dc82f26b4dfa49c\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:31:17-139
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[com.google.android.gms:play-services-measurement-api:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\dd7c9673f49f0c768dc82f26b4dfa49c\jetified-play-services-measurement-api-19.0.0\AndroidManifest.xml:32:17-82
+125            <meta-data
+125-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\32960b2b1b432774ae692936f60a747a\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+126                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+126-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\32960b2b1b432774ae692936f60a747a\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\32960b2b1b432774ae692936f60a747a\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+128        </service>
+129
+130        <provider
+130-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:9-19:20
+131            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+131-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:12:13-82
+132            android:authorities="javaquiz.moazmar.com.flutter.image_provider"
+132-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:13-74
+133            android:exported="false"
+133-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+134            android:grantUriPermissions="true" >
+134-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:15:13-47
+135            <meta-data
+135-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:16:13-18:75
+136                android:name="android.support.FILE_PROVIDER_PATHS"
+136-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:17:17-67
+137                android:resource="@xml/flutter_image_picker_file_paths" />
+137-->[:image_picker] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:18:17-72
+138        </provider>
+139
+140        <meta-data
+140-->[:google_mobile_ads] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\google_mobile_ads\intermediates\library_manifest\release\AndroidManifest.xml:10:9-12:36
+141            android:name="io.flutter.embedded_views_preview"
+141-->[:google_mobile_ads] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\google_mobile_ads\intermediates\library_manifest\release\AndroidManifest.xml:11:13-61
+142            android:value="true" />
+142-->[:google_mobile_ads] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\google_mobile_ads\intermediates\library_manifest\release\AndroidManifest.xml:12:13-33
+143
+144        <activity
+144-->[:url_launcher] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+145            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+145-->[:url_launcher] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+146            android:exported="false"
+146-->[:url_launcher] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+147            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+147-->[:url_launcher] C:\Users\marzo\Desktop\Store Apps\Java Quiz\Java Quiz\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+148
+149        <uses-library
+149-->[androidx.window:window:1.0.0-beta04] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6528ddee4e15bbd2316059f9e2d33015\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+150            android:name="androidx.window.extensions"
+150-->[androidx.window:window:1.0.0-beta04] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6528ddee4e15bbd2316059f9e2d33015\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+151            android:required="false" />
+151-->[androidx.window:window:1.0.0-beta04] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6528ddee4e15bbd2316059f9e2d33015\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+152        <uses-library
+152-->[androidx.window:window:1.0.0-beta04] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6528ddee4e15bbd2316059f9e2d33015\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+153            android:name="androidx.window.sidecar"
+153-->[androidx.window:window:1.0.0-beta04] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6528ddee4e15bbd2316059f9e2d33015\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+154            android:required="false" />
+154-->[androidx.window:window:1.0.0-beta04] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\6528ddee4e15bbd2316059f9e2d33015\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+155
+156        <activity
+156-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:27:9-44:20
+157            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+157-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:28:13-80
+158            android:excludeFromRecents="true"
+158-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:29:13-46
+159            android:exported="true"
+159-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:30:13-36
+160            android:launchMode="singleTask"
+160-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:31:13-44
+161            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+161-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:32:13-72
+162            <intent-filter>
+162-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:33:13-43:29
+163                <action android:name="android.intent.action.VIEW" />
+163-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+163-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+164
+165                <category android:name="android.intent.category.DEFAULT" />
+165-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+165-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+166                <category android:name="android.intent.category.BROWSABLE" />
+166-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+166-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+167
+168                <data
+168-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+169                    android:host="firebase.auth"
+169-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+170                    android:path="/"
+170-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+171                    android:scheme="genericidp" />
+171-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+172            </intent-filter>
+173        </activity>
+174        <activity
+174-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:45:9-62:20
+175            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+175-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:46:13-79
+176            android:excludeFromRecents="true"
+176-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:47:13-46
+177            android:exported="true"
+177-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:48:13-36
+178            android:launchMode="singleTask"
+178-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:49:13-44
+179            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+179-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:50:13-72
+180            <intent-filter>
+180-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:51:13-61:29
+181                <action android:name="android.intent.action.VIEW" />
+181-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:17-69
+181-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:34:25-66
+182
+183                <category android:name="android.intent.category.DEFAULT" />
+183-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+183-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+184                <category android:name="android.intent.category.BROWSABLE" />
+184-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:17-78
+184-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:37:27-75
+185
+186                <data
+186-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:39:17-42:51
+187                    android:host="firebase.auth"
+187-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:40:21-49
+188                    android:path="/"
+188-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:41:21-37
+189                    android:scheme="recaptcha" />
+189-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:42:21-48
+190            </intent-filter>
+191        </activity>
+192
+193        <service
+193-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:64:9-73:19
+194            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+194-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:65:13-101
+195            android:enabled="true"
+195-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:66:13-35
+196            android:exported="false" >
+196-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:67:13-37
+197            <intent-filter>
+197-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:68:13-72:29
+198                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+198-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:17-89
+198-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:69:25-86
+199
+200                <category android:name="android.intent.category.DEFAULT" />
+200-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:17-76
+200-->[com.google.firebase:firebase-auth:21.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\a6c9b9048cbee58aa847ba70a4b4bcdf\jetified-firebase-auth-21.0.1\AndroidManifest.xml:36:27-73
+201            </intent-filter>
+202        </service>
+203
+204        <provider
+204-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+205            android:name="com.google.firebase.provider.FirebaseInitProvider"
+205-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+206            android:authorities="javaquiz.moazmar.com.firebaseinitprovider"
+206-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+207            android:directBootAware="true"
+207-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+208            android:exported="false"
+208-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+209            android:initOrder="100" />
+209-->[com.google.firebase:firebase-common:20.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\69b39358f036ef76f8a69bff560b48ed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+210
+211        <activity
+211-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+212            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+212-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+213            android:excludeFromRecents="true"
+213-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+214            android:exported="false"
+214-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+215            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+215-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+216        <!--
+217            Service handling Google Sign-In user revocation. For apps that do not integrate with
+218            Google Sign-In, this service will never be started.
+219        -->
+220        <service
+220-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+221            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+221-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+222            android:exported="true"
+222-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+223            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+223-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\5ee519c40bf9d58aa58283d00ac2c8ef\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+224
+225        <activity
+225-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\1ceaf118fb6db692c0fb1e7136016e18\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+226            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+226-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\1ceaf118fb6db692c0fb1e7136016e18\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+227            android:exported="false"
+227-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\1ceaf118fb6db692c0fb1e7136016e18\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+228            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+228-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\1ceaf118fb6db692c0fb1e7136016e18\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+229        <activity
+229-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:48:9-52:64
+230            android:name="com.google.android.gms.ads.AdActivity"
+230-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:49:13-65
+231            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+231-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:50:13-122
+232            android:exported="false"
+232-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:51:13-37
+233            android:theme="@android:style/Theme.Translucent" />
+233-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:52:13-61
+234
+235        <provider
+235-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:54:9-58:39
+236            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+236-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:55:13-76
+237            android:authorities="javaquiz.moazmar.com.mobileadsinitprovider"
+237-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:56:13-73
+238            android:exported="false"
+238-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:57:13-37
+239            android:initOrder="100" />
+239-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:58:13-36
+240
+241        <service
+241-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:60:9-63:40
+242            android:name="com.google.android.gms.ads.AdService"
+242-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:61:13-64
+243            android:enabled="true"
+243-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:62:13-35
+244            android:exported="false" />
+244-->[com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\38e21276f32c799cc80a851233f1eb8b\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:63:13-37
+245
+246        <receiver
+246-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:29:9-33:20
+247            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+247-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:30:13-85
+248            android:enabled="true"
+248-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:31:13-35
+249            android:exported="false" >
+249-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:32:13-37
+250        </receiver>
+251
+252        <service
+252-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:35:9-38:40
+253            android:name="com.google.android.gms.measurement.AppMeasurementService"
+253-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:36:13-84
+254            android:enabled="true"
+254-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:37:13-35
+255            android:exported="false" />
+255-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:38:13-37
+256        <service
+256-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:39:9-43:72
+257            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+257-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:40:13-87
+258            android:enabled="true"
+258-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:41:13-35
+259            android:exported="false"
+259-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:42:13-37
+260            android:permission="android.permission.BIND_JOB_SERVICE" />
+260-->[com.google.android.gms:play-services-measurement:19.0.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\30987bc44b06ca025cdf299801370aef\jetified-play-services-measurement-19.0.0\AndroidManifest.xml:43:13-69
+261
+262        <meta-data
+262-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\7fa8c69debb1b80a1352e71f93f82845\jetified-play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
+263            android:name="com.google.android.gms.version"
+263-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\7fa8c69debb1b80a1352e71f93f82845\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+264            android:value="@integer/google_play_services_version" />
+264-->[com.google.android.gms:play-services-basement:17.6.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\7fa8c69debb1b80a1352e71f93f82845\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
+265
+266        <provider
+266-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:30:9-36:35
+267            android:name="androidx.work.impl.WorkManagerInitializer"
+267-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:31:13-69
+268            android:authorities="javaquiz.moazmar.com.workmanager-init"
+268-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:32:13-68
+269            android:directBootAware="false"
+269-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:33:13-44
+270            android:exported="false"
+270-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:34:13-37
+271            android:multiprocess="true" />
+271-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:35:13-40
+272
+273        <service
+273-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:38:9-43:35
+274            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+274-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:39:13-88
+275            android:directBootAware="false"
+275-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:40:13-44
+276            android:enabled="@bool/enable_system_alarm_service_default"
+276-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:41:13-72
+277            android:exported="false" />
+277-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:42:13-37
+278        <service
+278-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:44:9-50:35
+279            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+279-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:45:13-84
+280            android:directBootAware="false"
+280-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:46:13-44
+281            android:enabled="@bool/enable_system_job_service_default"
+281-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:47:13-70
+282            android:exported="true"
+282-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:48:13-36
+283            android:permission="android.permission.BIND_JOB_SERVICE" />
+283-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:49:13-69
+284
+285        <receiver
+285-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:52:9-57:35
+286            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+286-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:53:13-88
+287            android:directBootAware="false"
+287-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:54:13-44
+288            android:enabled="true"
+288-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:55:13-35
+289            android:exported="false" />
+289-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:56:13-37
+290        <receiver
+290-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:58:9-68:20
+291            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+291-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:59:13-106
+292            android:directBootAware="false"
+292-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:60:13-44
+293            android:enabled="false"
+293-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:61:13-36
+294            android:exported="false" >
+294-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:62:13-37
+295            <intent-filter>
+295-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:64:13-67:29
+296                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+296-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:65:17-87
+296-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:65:25-84
+297                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+297-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:66:17-90
+297-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:66:25-87
+298            </intent-filter>
+299        </receiver>
+300        <receiver
+300-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:69:9-79:20
+301            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+301-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:70:13-104
+302            android:directBootAware="false"
+302-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:71:13-44
+303            android:enabled="false"
+303-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:72:13-36
+304            android:exported="false" >
+304-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:73:13-37
+305            <intent-filter>
+305-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:75:13-78:29
+306                <action android:name="android.intent.action.BATTERY_OKAY" />
+306-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:76:17-77
+306-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:76:25-74
+307                <action android:name="android.intent.action.BATTERY_LOW" />
+307-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:77:17-76
+307-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:77:25-73
+308            </intent-filter>
+309        </receiver>
+310        <receiver
+310-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:80:9-90:20
+311            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+311-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:81:13-104
+312            android:directBootAware="false"
+312-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:82:13-44
+313            android:enabled="false"
+313-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:83:13-36
+314            android:exported="false" >
+314-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:84:13-37
+315            <intent-filter>
+315-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:86:13-89:29
+316                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+316-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:87:17-83
+316-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:87:25-80
+317                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+317-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:88:17-82
+317-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:88:25-79
+318            </intent-filter>
+319        </receiver>
+320        <receiver
+320-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:91:9-100:20
+321            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+321-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:92:13-103
+322            android:directBootAware="false"
+322-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:93:13-44
+323            android:enabled="false"
+323-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:94:13-36
+324            android:exported="false" >
+324-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:95:13-37
+325            <intent-filter>
+325-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:97:13-99:29
+326                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+326-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:98:17-79
+326-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:98:25-76
+327            </intent-filter>
+328        </receiver>
+329        <receiver
+329-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:101:9-112:20
+330            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+330-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:102:13-88
+331            android:directBootAware="false"
+331-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:103:13-44
+332            android:enabled="false"
+332-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:104:13-36
+333            android:exported="false" >
+333-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:105:13-37
+334            <intent-filter>
+334-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:107:13-111:29
+335                <action android:name="android.intent.action.BOOT_COMPLETED" />
+335-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:108:17-79
+335-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:108:25-76
+336                <action android:name="android.intent.action.TIME_SET" />
+336-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:109:17-73
+336-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:109:25-70
+337                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+337-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:110:17-81
+337-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:110:25-78
+338            </intent-filter>
+339        </receiver>
+340        <receiver
+340-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:113:9-122:20
+341            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+341-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:114:13-99
+342            android:directBootAware="false"
+342-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:115:13-44
+343            android:enabled="@bool/enable_system_alarm_service_default"
+343-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:116:13-72
+344            android:exported="false" >
+344-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:117:13-37
+345            <intent-filter>
+345-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:119:13-121:29
+346                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+346-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:120:17-98
+346-->[androidx.work:work-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\83d16dbe7d2c2ea8e33c4ce6892f69a7\work-runtime-2.1.0\AndroidManifest.xml:120:25-95
+347            </intent-filter>
+348        </receiver>
+349
+350        <service
+350-->[androidx.room:room-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\43e642a5b0ed30ae497f505a727b9ba5\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+351            android:name="androidx.room.MultiInstanceInvalidationService"
+351-->[androidx.room:room-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\43e642a5b0ed30ae497f505a727b9ba5\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+352            android:exported="false" />
+352-->[androidx.room:room-runtime:2.1.0] C:\Users\marzo\.gradle\caches\transforms-2\files-2.1\43e642a5b0ed30ae497f505a727b9ba5\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+353    </application>
+354
+355</manifest>

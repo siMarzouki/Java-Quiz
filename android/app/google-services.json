@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "63261052695",
+    "project_id": "java-quiz-8ed63",
+    "storage_bucket": "java-quiz-8ed63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63261052695:android:6f48ece5505c071eddf152",
+        "android_client_info": {
+          "package_name": "javaquiz.moazmar.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63261052695-84p9psaqfgekf1lmhjr59vvsam8kpj6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWJRsIP-9MeMD-lf441495l2zvzVwkvLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63261052695-84p9psaqfgekf1lmhjr59vvsam8kpj6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

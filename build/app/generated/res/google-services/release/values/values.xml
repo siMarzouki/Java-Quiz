@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">63261052695-84p9psaqfgekf1lmhjr59vvsam8kpj6h.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">63261052695</string>
+    <string name="google_api_key" translatable="false">AIzaSyDWJRsIP-9MeMD-lf441495l2zvzVwkvLI</string>
+    <string name="google_app_id" translatable="false">1:63261052695:android:6f48ece5505c071eddf152</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDWJRsIP-9MeMD-lf441495l2zvzVwkvLI</string>
+    <string name="google_storage_bucket" translatable="false">java-quiz-8ed63.appspot.com</string>
+    <string name="project_id" translatable="false">java-quiz-8ed63</string>
+</resources>
